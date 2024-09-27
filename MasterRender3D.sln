@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterRender3D", "MasterRender3D.csproj", "{31800565-1F45-46AD-9A34-9E178A70DBB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31800565-1F45-46AD-9A34-9E178A70DBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31800565-1F45-46AD-9A34-9E178A70DBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31800565-1F45-46AD-9A34-9E178A70DBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31800565-1F45-46AD-9A34-9E178A70DBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DB3E4EF-DE93-405D-98C0-7777DEC8D45B}
+	EndGlobalSection
+EndGlobal
