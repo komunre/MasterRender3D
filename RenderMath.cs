@@ -8,7 +8,7 @@ namespace MasterRender3D
 {
     public class RenderMath
     {
-        public class Vector2i
+        public class Vector2i : ICloneable
         {
             public int x = 0;
             public int y = 0;
@@ -29,6 +29,11 @@ namespace MasterRender3D
                 return MathF.Sqrt(this.x * this.x + this.y * this.y);
             }
 
+            public object Clone()
+            {
+                return new Vector2i(this.x, this.y);
+            }
+
             public static Vector2i operator -(Vector2i v1, Vector2i v2)
             {
                 return new Vector2i(v1.x - v2.x, v1.y - v2.y);
@@ -45,7 +50,7 @@ namespace MasterRender3D
             }
         }
 
-        public class Vector3
+        public class Vector3 : ICloneable
         {
             public float x = 0;
             public float y = 0;
@@ -58,6 +63,11 @@ namespace MasterRender3D
                 this.x = x;
                 this.y = y;
                 this.z = z;
+            }
+
+            public object Clone()
+            {
+                return new Vector3(x, y, z);
             }
 
             public float Magnitude()
@@ -81,7 +91,7 @@ namespace MasterRender3D
             }
         }
 
-        public class Vector4
+        public class Vector4 : ICloneable
         {
             public float x = 0;
             public float y = 0;
@@ -96,6 +106,11 @@ namespace MasterRender3D
                 this.y = y;
                 this.z = z;
                 this.w = w;
+            }
+
+            public object Clone()
+            {
+                return new Vector4(x, y, z, w);
             }
 
             public float Magnitude()
@@ -131,7 +146,7 @@ namespace MasterRender3D
             }
         }
 
-        public class Mat4
+        public class Mat4 : ICloneable
         {
             public static Mat4 Identity => new Mat4(new float[4, 4]
                 {
@@ -147,6 +162,11 @@ namespace MasterRender3D
             public Mat4(float[,] values)
             {
                 Values = values;
+            }
+
+            public object Clone()
+            {
+                return new Mat4(Values);
             }
 
             public static Vector4 operator *(Vector4 vec, Mat4 mat)

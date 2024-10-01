@@ -74,9 +74,9 @@ namespace MasterRender3D
             zBuffer.Clear();
         }
 
-        public void ProjectVerticesToScreen(Vector3[] verts)
+        public void GoToImmediate(Vector2i pos)
         {
-
+            Helper.GoToImmediate(pos);
         }
 
         public void Clear()
